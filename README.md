@@ -4,15 +4,15 @@
 
 **The complete, high-performance offline-first management suite and mobile companion for modern coaching centers, academies, and private tutors.**
 
-[![Version](https://img.shields.io/badge/Version-3.0.1-2563EB?style=for-the-badge&logo=electron)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest)
-[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.0.1.exe)
+[![Version](https://img.shields.io/badge/Version-3.5.0-2563EB?style=for-the-badge&logo=electron)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.0.exe)
 [![Android Companion](https://img.shields.io/badge/Android-Companion%20App-3DDC84?style=for-the-badge&logo=android)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
 [![Cloud Sync](https://img.shields.io/badge/Cloud%20Sync-Firebase%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![Offline Capable](https://img.shields.io/badge/Architecture-100%25%20Offline%20First-10B981?style=for-the-badge)](https://github.com/prajapatikuldeep455-source/classcore-releases)
 
 ---
 
-### 📥 [Download ClassCore Desktop (Windows x64)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.0.1.exe) &nbsp;|&nbsp; 📲 [Download Mobile Companion (.apk)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
+### 📥 [Download ClassCore Desktop v3.5.0 (Windows x64)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.0.exe) &nbsp;|&nbsp; 📲 [Download Mobile Companion (.apk)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
 
 </div>
 
@@ -20,9 +20,39 @@
 
 ## 🌟 Why ClassCore?
 
-Managing an educational institute or tuition center shouldn't require juggling complicated spreadsheets, multiple messaging apps, and separate billing tools. 
+Managing an educational institute or tuition center shouldn't require juggling complicated spreadsheets, multiple messaging apps, separate billing tools, and manual handwriting on paper cards.
 
-**ClassCore** unifies every operational aspect into a sleek, lightning-fast desktop command center paired with an instant Android mobile app. Built with an **offline-first philosophy**, ClassCore guarantees that power outages, weak internet, or server downtimes never interrupt your admissions, fee collections, or attendance punches.
+**ClassCore** unifies every operational aspect into a sleek, lightning-fast desktop command center paired with an instant Android mobile app. Built with an **offline-first philosophy**, ClassCore guarantees that power outages, weak internet, or server downtimes never interrupt your admissions, fee collections, or biometric attendance.
+
+---
+
+## ✨ Highlights in Latest v3.5.0 Release
+
+### 🪪 1. Physical Fee Card Passbook Overprinting Engine
+- **Direct-on-Card Printing:** Print directly onto any existing physical tuition fee card or monthly passbook without needing specialized stationery.
+- **Pre-Calibrated Universal Presets:** Sub-millimeter pre-configured alignment for standard **11-Month** (*June to April*) and **12-Month** (*May to April*) tuition cycles.
+- **Dual Universal Feeding Modes:**
+  - **Direct Card Feed Mode:** Tailored for Epson EcoTank, Canon PIXMA, and HP InkTank printers with custom card rear feeder slots (`100mm × 185mm`).
+  - **A4 Carrier Sheet Mode:** Universal support for laser printers (HP LaserJet, Brother, Canon) by placing cards onto a standard A4 carrier sheet.
+- **Interactive Drag Designer & Calibration Sliders:** Visual canvas with drag-and-drop handles (`↕`) and fine micro-calibration sliders (`±15mm`) with persistent memory.
+- **Selective Digital Signing:** Optional cursive digital signature printing. Unchecking leaves cells 100% blank for real physical pen signing; unpaid months remain blank for future print passes.
+
+### 📸 2. Smart Computer Vision Auto-Detection
+- **Instant Photo Analysis:** Upload a photo of any coaching class's physical fee card. The built-in HTML5 Canvas computer vision engine scans luminance gradients and horizontal lines in < 20ms.
+- **Automatic Grid Snapping:** Automatically detects student header label lines (Name, Class, Roll No, Fees) and aligns month table rows with zero manual math.
+
+### ⚡ 3. Dynamic Offline UPI QR Receipts
+- **Instant Scan-to-Pay:** Every fee receipt automatically encodes the payable amount, tuition VPA, and student ID into a standard NPCI UPI QR code. Parents scan and pay instantly via Google Pay, PhonePe, Paytm, or BHIM.
+- **Multi-Size Invoices:** Print in A4 full-page, A5 half-page, A6 voucher, A7 slip, or 58mm / 80mm ESC/POS thermal printer format.
+
+### 📝 4. Intelligent Exam Question Paper Generator
+- **School & Board Pattern Papers:** Generate professional exam papers with custom sections, marks allocation, answer keys, and watermarks.
+- **1-Click PDF Export:** Clean print-ready formatting with institute branding and custom instructions.
+
+### ⏱️ 5. Universal Biometric Hub
+- **Direct LAN & USB Sync:** Native integration with leading biometric machines (**eSSL**, **Realtime**, **ZKTeco**, **Mantra**, **BioMax**).
+- **Pen Drive Log Importer:** Import punch logs offline from USB flash drives (`.dat`, `.csv`, `.txt`).
+- **Live Background Scanner:** Real-time push notifications and automated WhatsApp parent alerts on student punch-in/punch-out.
 
 ---
 
@@ -37,8 +67,8 @@ Managing an educational institute or tuition center shouldn't require juggling c
          │                  │                             │                  │
 ┌────────▼────────┐┌────────▼────────┐           ┌────────▼────────┐┌────────▼────────┐
 │  Admissions 360 ││  Attendance 360 │           │    Fees 360°    ││    Exams 360°   │
-│  PVC ID Cards   ││  QR Punch Desk  │           │  UPI POS Invoices││ Matrix Marksheet│
-│  Student Dossier││  Leave System   │           │ Aging & Reminders││  A4 Report Cards│
+│  PVC ID Cards   ││  Biometric Hub  │           │  Fee Card Engine││  Paper Generator│
+│  Student Dossier││  QR Punch Desk  │           │  Dynamic UPI QR ││  A4 Report Cards│
 └─────────────────┘└─────────────────┘           └─────────────────┘└─────────────────┘
          │                  │                             │                  │
          └──────────────────┼─────────────────────────────┼──────────────────┘
@@ -46,7 +76,7 @@ Managing an educational institute or tuition center shouldn't require juggling c
                    ┌────────▼────────┐           ┌────────▼────────┐
                    │  Timetable 360° │           │  WhatsApp Hub   │
                    │ Clash Detection │           │ AI Auto-Replies │
-                   │ Payroll Ledger  │           │ Auto-Broadcasts │
+                   │ Operating Ledger│           │ Auto-Broadcasts │
                    └─────────────────┘           └─────────────────┘
 ```
 
@@ -60,7 +90,9 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 ---
 
-### 2. ⚡ Attendance & Leave Management 360°
+### 2. ⚡ Attendance & Biometric Management 360°
+- **Universal Biometric Attendance Hub:** Plug-and-play compatibility with eSSL, Realtime, ZKTeco, Mantra, and BioMax scanners via USB and LAN.
+- **Pen Drive Log Importer:** Effortlessly import attendance logs via USB flash drive without running network cables to the machine.
 - **Instant QR & Barcode Attendance Punch Desk:** High-speed barcode/QR attendance punch modal with real-time audio chimes and visual verification.
 - **Visual Monthly Attendance Heatmap:** Interactive calendar grid visualizing daily attendance patterns (Present `P`, Absent `A`, Late `L`, Formal Leave `LV`).
 - **Critical Defaulters Radar:** Automatically isolates students falling below required attendance thresholds (e.g. `< 75%`) for proactive academic intervention.
@@ -68,12 +100,13 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 ---
 
-### 3. 💰 Fees, Installments & Invoicing 360°
+### 3. 💰 Fees, Installments & Physical Fee Card Engine 360°
+- **Physical Fee Card Overprinting:** Direct printing onto existing coaching fee cards and passbooks with sub-millimeter precision.
 - **Multi-Part Installment Schedules:** Divide course fees into flexible milestone installments with individual due dates and custom amounts.
-- **Thermal POS & A4 Invoices:** Support for 80mm and 58mm POS thermal receipt printers, as well as formal full-page A4 PDF fee receipts.
+- **Thermal POS & Multi-Size Invoices:** Support for 80mm and 58mm POS thermal receipt printers, A7 mini vouchers, A6 slips, A5 sheets, and formal full-page A4 PDF fee receipts.
 - **Dynamic "Scan-to-Pay" UPI QR:** Embedded dynamic UPI payment QR codes featuring custom payment amounts and transaction references, allowing parents to pay instantly from GPay, PhonePe, or Paytm.
 - **Fee Defaulter Aging Analysis:** Granular tracking of overdue dues broken down into aging buckets (0–30 days, 31–60 days, 61–90 days, 90+ days).
-- **3-Tone WhatsApp Fee Reminders:** Polite reminder, due date alert, and urgent notice templates with personalized payment links.
+- **3-Tone WhatsApp Fee Reminders:** Polite reminder, due date alert, and urgent notice templates with personalized payment details.
 
 ---
 
@@ -98,12 +131,12 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 ---
 
-### 7. 📊 Multi-Subject Exam Series & Continuous Report Cards 360°
-- **Dynamic Multi-Subject Exam Builder:** Create single-subject quizzes or complex multi-subject term examinations with custom maximum and passing marks.
+### 7. 📊 Multi-Subject Exam Series & Question Paper Generator 360°
+- **Intelligent Exam Paper Generator:** Auto-format question papers with sections, marks distribution, blueprints, and answer keys.
 - **Spreadsheet-Style Batch Marksheet Matrix:** Enter marks rapidly with keyboard navigation (`Tab`, `Shift+Tab`, `Enter`, arrow keys) and an instant Absent (`AB`) toggle.
 - **🏆 Top 3 Toppers Podium:** Automatic calculation of Top 3 Toppers (Gold 🥇, Silver 🥈, Bronze 🥉), aggregate percentages, and batch ranks.
 - **Weakest Subject Radar & Remedial Watchlist:** Automatically isolates subjects with lowest class averages and flags struggling students for targeted remedial guidance.
-- **1-Click Continuous A4 Batch Report Cards:** Bulk print elegant student report cards with CBSE grading scales, subject breakdowns, and signature lines.
+- **1-Click Continuous A4 Batch Report Cards:** Bulk print elegant student report cards with CBSE/GSEB grading scales, subject breakdowns, and signature lines.
 
 ---
 
@@ -134,7 +167,7 @@ Managing an educational institute or tuition center shouldn't require juggling c
 ## 📥 Installation & Setup Guide
 
 ### 1. Windows Desktop Installation
-1. Download the latest installer: [`ClassCore-Setup-3.0.1.exe`](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.0.1.exe).
+1. Download the latest installer: [`ClassCore-Setup-3.5.0.exe`](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.0.exe).
 2. Run the installer and follow the setup wizard.
 3. Launch **ClassCore** from your Desktop or Start Menu.
 4. On first launch, create your Admin account with your desired `@username` and password.
@@ -151,6 +184,7 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 - **Zero Third-Party Data Selling:** Your student directories, financial records, and marks are stored locally on your device and inside your own private Firebase cloud project.
 - **Cryptographic Password Protection:** Passwords are never sent or stored as plaintext; protected with salted SHA-256 encryption.
+- **Layer 3 Tamper Hardening:** Code obfuscation and ASAR archive encryption safeguard licensing and proprietary logic.
 - **Private Source Code:** The core application engine is developed in a closed-source private repository; only verified production binaries are distributed via this repository.
 
 ---

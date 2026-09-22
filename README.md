@@ -229,7 +229,6 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 - **Creator & Lead Developer:** Kuldeep Prajapati
 - **Support & Inquiries:** [coreclass.2025@gmail.com](mailto:coreclass.2025@gmail.com)
-- **Releases & Updates:** [github.com/prajapatikuldeep455-source/classcore-releases](https://github.com/prajapatikuldeep455-source/classcore-releases)
 
 <div align="center">
   <sub>Copyright © 2025–2026 ClassCore. All rights reserved.</sub>

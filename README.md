@@ -4,15 +4,15 @@
 
 **The complete, high-performance offline-first management suite and mobile companion for modern coaching centers, academies, and private tutors.**
 
-[![Version](https://img.shields.io/badge/Version-3.5.0-2563EB?style=for-the-badge&logo=electron)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest)
-[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.0.exe)
+[![Version](https://img.shields.io/badge/Version-3.5.2-2563EB?style=for-the-badge&logo=electron)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.2.exe)
 [![Android Companion](https://img.shields.io/badge/Android-Companion%20App-3DDC84?style=for-the-badge&logo=android)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
 [![Cloud Sync](https://img.shields.io/badge/Cloud%20Sync-Firebase%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![Offline Capable](https://img.shields.io/badge/Architecture-100%25%20Offline%20First-10B981?style=for-the-badge)](https://github.com/prajapatikuldeep455-source/classcore-releases)
 
 ---
 
-### 📥 [Download ClassCore Desktop v3.5.0 (Windows x64)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.0.exe) &nbsp;|&nbsp; 📲 [Download Mobile Companion (.apk)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
+### 📥 [Download ClassCore Desktop v3.5.2 (Windows x64)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.2.exe) &nbsp;|&nbsp; 📲 [Download Mobile Companion (.apk)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
 
 </div>
 
@@ -26,7 +26,43 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 ---
 
-## ✨ Highlights in Latest v3.5.0 Release
+## 🚀 Highlights in Latest v3.5.2 Release
+
+### 📊 1. Executive Profit & Loss (P&L) Statement Engine
+- **Holistic Operational Accounting:** Automatically computes **Operating Revenue** (Total fees collected across Cash, UPI, and Bank transfer channels), **Operating Expenditures** (Classroom & center expense vouchers), and **Faculty Payroll** (Disbursed teacher salaries).
+- **Executive Metric Cards:** Instant computation of Gross Revenue, Total Operating Outflow, Net Operating Surplus/Deficit, and Operating Profit Margin %.
+- **Comparative Multi-Channel Schedule:** Side-by-side analytical breakdown of revenue streams vs categorized expense heads.
+- **Auditable Voucher Audit Trail:** Complete transaction-level table with Voucher No, Date, Category, Description, Paid To, Payment Mode, and Amount.
+- **Period Filter Presets:** Instant 1-click recalculation across `This Month`, `Last Month`, `This Financial Year`, and `All-Time`.
+- **1-Click Certified Exports:** Native Electron A4 Print layout (`window.classcore.printContent`), official signed PDF document export (`window.classcore.savePDF`), and spreadsheet-ready CSV downloads.
+
+### ⚡ 2. Real-Time Auto-Balancing Milestones Engine
+- **Zero-Friction Balance Allocation:** Adding a milestone (`➕ Add Milestone`) automatically checks for any unallocated remainder (`Target - Scheduled Sum`) and assigns the exact unallocated balance.
+- **Smart 1-Click Split & Equalize:** Adding a milestone to an already balanced schedule automatically re-splits the fee evenly without manual mental math.
+- **Live Reactive Feedback:** Typing in any milestone amount dynamically updates the scheduled sum, allocation status pill, and percentage share badge `(40%)`, `(30%)` in real time.
+- **Actionable Correction Quick-Fixes:** Contextual `[⚡ Allocate]` and `[⚡ Balance]` buttons appear immediately if an overage or remainder is detected.
+- **Admission Form Sync:** Typing a new course fee in student admission auto-scales all milestone installments proportionally.
+
+### ☁️ 3. Dynamic Cloud Plan Synchronization
+- **Bidirectional Plan Sync:** Dynamic synchronization between local software licenses and Cloud Firestore (`accounts/{username}` and `institutes/{username}`).
+- **Eliminates Overwrite Bug:** Fixes an issue where cloud documents were overwritten with `'trial'`. Active paid plans (`monthly`, `yearly`, `lifetime`) now persist securely and sync to companion devices.
+- **Auto Cloud-to-Desktop Upgrade:** Plans upgraded via the web console or mobile companion automatically unlock the desktop client without requiring manual license key re-entry.
+- **Real-Time Purchase Trigger:** Razorpay payments and offline key activations trigger instantaneous Firestore cloud sync.
+
+### 📲 4. Direct Mobile APK Download QR Code
+- **1-Scan Frictionless Download:** Scanning the pairing QR code with any Android phone now links directly to the production APK download, eliminating intermediate GitHub sign-in walls.
+- **Browser & WhatsApp Sharing:** Integrated "Download in Browser", "Copy Link", and "Share to WhatsApp" actions for simple staff onboarding.
+
+### 👁️ 5. Teacher Security & Password Reveal System
+- **Reversible Credential Cipher:** Implemented an obfuscated credential cipher (`_encryptPassToken` / `_decryptPassToken`) allowing administrators to view their actual plain password on-demand using the "👁️ Show" toggle.
+
+### 🛡️ 6. Historical Point-in-Time Database Snapshots
+- **Intelligent Snapshot Auditing:** Snapshots are cataloged with human-friendly badges (`Safety Guard`, `Daily Snapshot`, `System Baseline`) instead of cryptic filenames.
+- **1-Click Restore & Pen Drive Export:** Restore any historical database point in 1 click with automatic pre-restore safety snapshots and direct external USB drive backups.
+
+---
+
+## ✨ Features in v3.5.0 Release
 
 ### 🪪 1. Physical Fee Card Passbook Overprinting Engine
 - **Direct-on-Card Printing:** Print directly onto any existing physical tuition fee card or monthly passbook without needing specialized stationery.
@@ -167,7 +203,7 @@ Managing an educational institute or tuition center shouldn't require juggling c
 ## 📥 Installation & Setup Guide
 
 ### 1. Windows Desktop Installation
-1. Download the latest installer: [`ClassCore-Setup-3.5.0.exe`](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.0.exe).
+1. Download the latest installer: [`ClassCore-Setup-3.5.2.exe`](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.2.exe).
 2. Run the installer and follow the setup wizard.
 3. Launch **ClassCore** from your Desktop or Start Menu.
 4. On first launch, create your Admin account with your desired `@username` and password.

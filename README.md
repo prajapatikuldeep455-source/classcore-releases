@@ -37,7 +37,7 @@ Managing an educational institute or tuition center shouldn't require juggling c
   - 🔍 **Zoom In (+) / Zoom Out (−) / Fit 100%:** Inspect minute details, student roll numbers, fee totals, and barcodes before printing.
   - 📄 **Dynamic Paper Engine:** True-to-life dimensional scaling and auto-badges for `A6 (Small 105×148mm)`, `A7 (Mini 74×105mm)`, `A5 (Half)`, `A4 (Standard)`, `Thermal 80mm`, `Thermal 58mm`, and `Fee Card Passbooks (100×185mm)`. Direct page geometry calibration passed to printer drivers and PDF engines.
   - ✕ **Close [Esc]:** Quick dismissal.
-- **True Page Size Reconciliation:** Guarantees that documents selected as A6 or Thermal never default to A4 in preview or print, fitting the physical paper with millimeter accuracy.
+- **True Page Size Reconciliation:** Guarantees that documents selected as A6, A7, or Thermal never default to A4 in preview or print, fitting physical paper with millimeter accuracy.
 - **Neutral Paper Studio Canvas:** Displays true-to-life white document pages on a comfortable reader neutral workspace (`#525659`), eliminating dark mode interference on printed materials.
 - **Windows 11 Print Dialog Optimization:** Automatically configures `PreferLegacyPrintDialog = 1` on startup, completely resolving the Windows 11 *"This app doesn't support print preview"* blank box and providing fast, direct native printer selection (Brother, HP, Canon, Epson).
 
@@ -56,7 +56,8 @@ Managing an educational institute or tuition center shouldn't require juggling c
 - **Zero-Downtime State Refresh:** Decrypts encrypted database vaults atomically and broadcasts instant reload events to all active windows.
 
 ### 🪪 5. Physical Fee Card Passbook Overprinting Engine
-- **Direct Card Feed Mode:** Print directly onto custom tuition passbooks and cards (`100mm × 185mm`) via Epson EcoTank and Canon rear trays.
+- **One-Click Receipt-to-Card Printing:** Clicking `🪪 Print Card` directly inside the digital Fee Receipt modal instantly loads the student's active card template with the corresponding month pre-selected.
+- **Direct Card Feed Mode:** Print directly onto custom tuition passbooks and cards (`100mm × 185mm`, `95mm × 180mm`, or custom) via Epson EcoTank and Canon rear trays.
 - **A4 Carrier Sheet Mode:** Universal support for laser printers (HP LaserJet, Brother, Canon) using A4 carrier sheets.
 - **Micro-Calibration:** Visual canvas with drag-and-drop handles and millimeter adjustment sliders.
 

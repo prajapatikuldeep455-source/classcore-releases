@@ -65,6 +65,17 @@ Managing an educational institute or tuition center shouldn't require juggling c
 - **Operating Revenue & Expenses:** Real-time financial calculations across fee collections, expense vouchers, and faculty payroll.
 - **Certified Exports:** Native Electron print layouts, official PDF exports, and spreadsheet-ready CSV downloads.
 
+### 📈 7. Institute Reports & Detailed Multi-Sheet Excel Financial Intelligence
+- **Unified Institute Command Center:** Dedicated `📈 Reports` navigation module providing consolidated visibility over gross fee revenue, operating expenditures, teacher payroll, net operating P&L, collection efficiency, and student fee defaulters.
+- **Multi-Period Temporal Analysis:** Single-click aggregation for *This Month*, *Last Month*, *Quarterly (Q1–Q4)*, *Financial Year (FY 2026-27)*, *Calendar Year*, *Custom Date Ranges*, and *All-Time Historical Records*.
+- **Detailed 5-Sheet Excel Workbook (.xlsx):** Generates a comprehensive, audit-ready Excel workbook with auto-calculated totals and zero column truncation:
+  - **Sheet 1 (`Executive Summary`):** Institute metadata, KPI cards, Revenue by Mode breakdown, Expenses by Category breakdown, and Class-wise distribution.
+  - **Sheet 2 (`Fee Collections`):** Complete student-by-student fee transactions (Date, Receipt #, Student Name, Roll No, Class, Batch, Month, Payment Mode, Amount).
+  - **Sheet 3 (`Operating Expenses`):** Detailed voucher register (Date, Voucher #, Category, Description, Payee, Mode, Amount, Notes).
+  - **Sheet 4 (`Fee Defaulters & Dues`):** Complete student balance sheet (Annual Fees, Paid, Balance Due, Aging Bucket 0-15d/16-30d/31-60d/60d+).
+  - **Sheet 5 (`Staff Payroll`):** Teacher & staff salary disbursements (Date, Name, Role, Month, Mode, Amount).
+- **Certified Formal PDF & Print Preview:** Integrated with the WYSIWYG Print Preview engine to preview, inspect with zoom, and generate certified institutional audit certificates in PDF format.
+
 ---
 
 ## 💻 System Requirements

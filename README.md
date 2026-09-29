@@ -35,8 +35,9 @@ Managing an educational institute or tuition center shouldn't require juggling c
   - 🌐 **Open in Chrome / Browser:** Instant one-click launch in your default web browser (Chrome, Edge) with full native browser print preview, two-sided printing, margins, and paper trays.
   - 💾 **Save PDF:** Export the rendered document into a certified PDF instantly.
   - 🔍 **Zoom In (+) / Zoom Out (−) / Fit 100%:** Inspect minute details, student roll numbers, fee totals, and barcodes before printing.
-  - 📄 **Dynamic Paper Badge:** Auto-detects and formats for `A4 Portrait`, `A4 Landscape`, `A5`, `Thermal 80mm`, and `Thermal 58mm`.
+  - 📄 **Dynamic Paper Engine:** True-to-life dimensional scaling and auto-badges for `A6 (Small 105×148mm)`, `A7 (Mini 74×105mm)`, `A5 (Half)`, `A4 (Standard)`, `Thermal 80mm`, `Thermal 58mm`, and `Fee Card Passbooks (100×185mm)`. Direct page geometry calibration passed to printer drivers and PDF engines.
   - ✕ **Close [Esc]:** Quick dismissal.
+- **True Page Size Reconciliation:** Guarantees that documents selected as A6 or Thermal never default to A4 in preview or print, fitting the physical paper with millimeter accuracy.
 - **Neutral Paper Studio Canvas:** Displays true-to-life white document pages on a comfortable reader neutral workspace (`#525659`), eliminating dark mode interference on printed materials.
 - **Windows 11 Print Dialog Optimization:** Automatically configures `PreferLegacyPrintDialog = 1` on startup, completely resolving the Windows 11 *"This app doesn't support print preview"* blank box and providing fast, direct native printer selection (Brother, HP, Canon, Epson).
 

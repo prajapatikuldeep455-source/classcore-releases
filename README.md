@@ -76,6 +76,12 @@ Managing an educational institute or tuition center shouldn't require juggling c
   - **Sheet 5 (`Staff Payroll`):** Teacher & staff salary disbursements (Date, Name, Role, Month, Mode, Amount).
 - **Certified Formal PDF & Print Preview:** Integrated with the WYSIWYG Print Preview engine to preview, inspect with zoom, and generate certified institutional audit certificates in PDF format.
 
+### 📱 7. Mobile Companion v1.7 — Live In-App QR Attendance Scanner
+- **Continuous Camera Viewfinder:** High-speed in-app QR code attendance scanning using the phone camera with targeting reticle, audio chime tones (success, duplicate warning, error tone), and haptic vibration.
+- **Ultra-Compact Command Bar:** Redesigned clean date capsule (`‹ Today · 01 Oct ›`), inline batch dropdown, and micro-stats strip (`🟢 P · 🔴 A · 🟡 L · 🔵 LV · 👥 Tot`), freeing up 70% vertical screen space.
+- **100% Offline Compatible:** Powered by bundled `jsQR` and hardware-accelerated `BarcodeDetector`.
+- **Full Desktop QR Interoperability:** Automatically scans Desktop PVC ID cards (`CLASSCORE:id:roll:name:cls`), JSON cards, and Roll numbers with instant Cloud Sync to PC.
+
 ---
 
 ## 💻 System Requirements

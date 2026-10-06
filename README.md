@@ -4,15 +4,15 @@
 
 **The complete, high-performance offline-first management suite and mobile companion for modern coaching centers, academies, and private tutors.**
 
-[![Version](https://img.shields.io/badge/Version-3.5.4-2563EB?style=for-the-badge&logo=electron)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest)
-[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.4.exe)
+[![Version](https://img.shields.io/badge/Version-3.5.5-2563EB?style=for-the-badge&logo=electron)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest)
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011%20(x64)-0078D6?style=for-the-badge&logo=windows)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.5.exe)
 [![Android Companion](https://img.shields.io/badge/Android-Companion%20App-3DDC84?style=for-the-badge&logo=android)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
 [![Cloud Sync](https://img.shields.io/badge/Cloud%20Sync-Firebase%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![Offline Capable](https://img.shields.io/badge/Architecture-100%25%20Offline%20First-10B981?style=for-the-badge)](https://github.com/prajapatikuldeep455-source/classcore-releases)
 
 ---
 
-### 📥 [Download ClassCore Desktop v3.5.4 (Windows x64)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.4.exe) &nbsp;|&nbsp; 📲 [Download Mobile Companion (.apk)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
+### 📥 [Download ClassCore Desktop v3.5.5 (Windows x64)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Setup-3.5.5.exe) &nbsp;|&nbsp; 📲 [Download Mobile Companion (.apk)](https://github.com/prajapatikuldeep455-source/classcore-releases/releases/latest/download/ClassCore-Mobile.apk)
 
 </div>
 
@@ -26,61 +26,63 @@ Managing an educational institute or tuition center shouldn't require juggling c
 
 ---
 
-## 🚀 Highlights in Latest v3.5.4 Release
+## 🚀 Highlights in Latest v3.5.5 Release
 
-### 🖨️ 1. Interactive WYSIWYG Print Preview Engine
-- **Universal Print Preview Canvas:** Clicking print anywhere in the software (Monthly Attendance, Fee Receipts, Question Papers, Solutions, Passbooks, Timetables, P&L Statements, Vouchers, and Student Registers) immediately launches a dedicated, high-definition Print Preview window.
-- **Top Control Suite:**
-  - 🖨️ **Print (प्रिंट करें) [Ctrl+P]:** Send cleanly to the printer with one click.
-  - 🌐 **Open in Chrome / Browser:** Instant one-click launch in your default web browser (Chrome, Edge) with full native browser print preview, two-sided printing, margins, and paper trays.
-  - 💾 **Save PDF:** Export the rendered document into a certified PDF instantly.
-  - 🔍 **Zoom In (+) / Zoom Out (−) / Fit 100%:** Inspect minute details, student roll numbers, fee totals, and barcodes before printing.
-  - 📄 **Dynamic Paper Engine:** True-to-life dimensional scaling and auto-badges for `A6 (Small 105×148mm)`, `A7 (Mini 74×105mm)`, `A5 (Half)`, `A4 (Standard)`, `Thermal 80mm`, `Thermal 58mm`, and `Fee Card Passbooks (100×185mm)`. Direct page geometry calibration passed to printer drivers and PDF engines.
-  - ✕ **Close [Esc]:** Quick dismissal.
-- **True Page Size Reconciliation:** Guarantees that documents selected as A6, A7, or Thermal never default to A4 in preview or print, fitting physical paper with millimeter accuracy.
-- **Neutral Paper Studio Canvas:** Displays true-to-life white document pages on a comfortable reader neutral workspace (`#525659`), eliminating dark mode interference on printed materials.
-- **Windows 11 Print Dialog Optimization:** Automatically configures `PreferLegacyPrintDialog = 1` on startup, completely resolving the Windows 11 *"This app doesn't support print preview"* blank box and providing fast, direct native printer selection (Brother, HP, Canon, Epson).
+### 🖥️ 1. Widescreen Mode & 3-Line Sidebar Toggle (`☰` / `Ctrl+B`)
+- **Quick Topbar Hamburger Toggle:** A modern 3-line hamburger icon (`☰`) is now integrated right beside the page title in the topbar.
+- **Ergonomic Icon-Only Rail (68px):** Clicking `☰` or pressing `Ctrl + B` collapses the 240px navigation sidebar into a compact 68px rail, expanding the active workspace by over 172px for wide data tables, financial ledgers, and attendance sheets.
+- **Instant Recognition:** Desks (Dashboard, Students, Batches, Courses, Exams, Fees, Expenses, Reports, Attendance, Broadcast, Settings) remain centered with high-clarity emoji icons and native hover tooltips.
+- **Persistent View State:** Remembers the user's preferred sidebar state across reloads and application restarts via `localStorage`.
 
-### 📱 2. Mobile Companion Fee Reconciliation & Alphanumeric Receipts
-- **Conflict-Free History Merging:** Merges payments collected via the Android companion app with local desktop accounts without clobbering existing histories or duplicate timestamps.
-- **Alphanumeric Receipt Parsing:** Safely parses alphanumeric receipt tokens (`REC-17482`), eliminating inline JavaScript `ReferenceError` crashes and ensuring instant receipt preview and re-prints.
-- **Live Modal Refresh:** Incoming mobile fee transactions immediately appear in open payment history modals on desktop without restarting.
+### 📈 2. Institute Reports & Financial Solvency Desk Overhaul
+- **Full-Width Ledger Expansion:** Resolved a grid-nesting constraint in the Class-wise Collections card, unlocking 100% full-width rendering for the **Executive Statement of Operations**, **Fee Collections Register**, **Operating Expense Ledger**, and **Outstanding Receivables**.
+- **Zero Text Squish & Cut-offs:** Financial tables, credit inflow streams, and debit payroll allocations now expand with breathing room on standard and ultrawide screens.
+- **5-Sheet Audit Workbook (.xlsx):** Generates complete audit-ready Excel workbooks (`Executive Summary`, `Fee Collections`, `Operating Expenses`, `Fee Defaulters & Dues`, `Staff Payroll`) with auto-calculated formulas.
 
-### 📚 3. Courses & Exams Persistence & Firestore Schema Compliance
-- **Firestore Security Rules Alignment:** Automatically computes and attaches `count: list.length` to all synchronized collections (`batches`, `exams`, `attendance`, `expenses`), preventing silent `PERMISSION_DENIED` rejection.
-- **Permanent Creation Action:** Added a permanent `＋ Create Exam` primary button in the exams dashboard header.
-- **State ID Clean Reset:** Auto-resets `editCourseId = null` and `_editExamId = null` on modal dismissal, preventing accidental overwrites.
+### 📣 3. Re-Engineered WhatsApp Broadcast Desk
+- **Delivery Readiness Card (Sending Status):** Replaced legacy bulky alert blocks with a modern Delivery Readiness card featuring an SVG beacon, verified recipient counter, and live pulsing `Ready` badge.
+- **Balanced Full-Width 2-Column Grid:** Structured `Recipient Target` and `Sending Status` across an exact 50%–50% responsive grid with matching `58px` baseline heights and zero text truncation.
+- **Solid WhatsApp Action Button:** High-contrast WhatsApp brand green button (`#16A34A`) with native iconography, subtle shadow, and responsive hover feedback.
 
-### 🛡️ 4. Snapshot Disaster Recovery Engine
-- **Atomic Pre-Restore Safety Net:** Automatically creates an emergency snapshot (`classcore_pre_restore_*.json`) immediately before restoring any historical backup.
-- **Zero-Downtime State Refresh:** Decrypts encrypted database vaults atomically and broadcasts instant reload events to all active windows.
+### 📚 4. Courses Desk Layout Polish
+- **Harmonized CSS Grid:** Repaired header flexbox encapsulation, ensuring course cards flow naturally from left to right in a responsive auto-fill grid rather than clinging to right-hand edges.
 
-### 🪪 5. Physical Fee Card Passbook Overprinting Engine
-- **One-Click Receipt-to-Card Printing:** Clicking `🪪 Print Card` directly inside the digital Fee Receipt modal instantly loads the student's active card template with the corresponding month pre-selected.
-- **Direct Card Feed Mode:** Print directly onto custom tuition passbooks and cards (`100mm × 185mm`, `95mm × 180mm`, or custom) via Epson EcoTank and Canon rear trays.
-- **A4 Carrier Sheet Mode:** Universal support for laser printers (HP LaserJet, Brother, Canon) using A4 carrier sheets.
-- **Micro-Calibration:** Visual canvas with drag-and-drop handles and millimeter adjustment sliders.
+### 🏛️ 5. Senior Developer Codebase Architecture & QA Gate
+- **Automated Syntax Validator (`npm run check`):** Native compiler check across all 34 JavaScript modules to ensure 100% syntax integrity and zero syntax regressions.
+- **Root Directory Hygiene:** Cleaned legacy scratch files and logs into structured directories (`scripts/legacy/`, `scratch/`, `docs/`).
+- **Comprehensive Blueprint:** Published documentation covering process boundaries, security models, and developer guidelines.
 
-### ⚡ 6. Executive Profit & Loss (P&L) Statement Engine
-- **Operating Revenue & Expenses:** Real-time financial calculations across fee collections, expense vouchers, and faculty payroll.
-- **Certified Exports:** Native Electron print layouts, official PDF exports, and spreadsheet-ready CSV downloads.
+---
 
-### 📈 7. Institute Reports & Detailed Multi-Sheet Excel Financial Intelligence
-- **Unified Institute Command Center:** Dedicated `📈 Reports` navigation module providing consolidated visibility over gross fee revenue, operating expenditures, teacher payroll, net operating P&L, collection efficiency, and student fee defaulters.
-- **Multi-Period Temporal Analysis:** Single-click aggregation for *This Month*, *Last Month*, *Quarterly (Q1–Q4)*, *Financial Year (FY 2026-27)*, *Calendar Year*, *Custom Date Ranges*, and *All-Time Historical Records*.
-- **Detailed 5-Sheet Excel Workbook (.xlsx):** Generates a comprehensive, audit-ready Excel workbook with auto-calculated totals and zero column truncation:
-  - **Sheet 1 (`Executive Summary`):** Institute metadata, KPI cards, Revenue by Mode breakdown, Expenses by Category breakdown, and Class-wise distribution.
-  - **Sheet 2 (`Fee Collections`):** Complete student-by-student fee transactions (Date, Receipt #, Student Name, Roll No, Class, Batch, Month, Payment Mode, Amount).
-  - **Sheet 3 (`Operating Expenses`):** Detailed voucher register (Date, Voucher #, Category, Description, Payee, Mode, Amount, Notes).
-  - **Sheet 4 (`Fee Defaulters & Dues`):** Complete student balance sheet (Annual Fees, Paid, Balance Due, Aging Bucket 0-15d/16-30d/31-60d/60d+).
-  - **Sheet 5 (`Staff Payroll`):** Teacher & staff salary disbursements (Date, Name, Role, Month, Mode, Amount).
-- **Certified Formal PDF & Print Preview:** Integrated with the WYSIWYG Print Preview engine to preview, inspect with zoom, and generate certified institutional audit certificates in PDF format.
+## 💎 Signature Modules & Capabilities
 
-### 📱 7. Mobile Companion v1.7 — Live In-App QR Attendance Scanner
-- **Continuous Camera Viewfinder:** High-speed in-app QR code attendance scanning using the phone camera with targeting reticle, audio chime tones (success, duplicate warning, error tone), and haptic vibration.
-- **Ultra-Compact Command Bar:** Redesigned clean date capsule (`‹ Today · 01 Oct ›`), inline batch dropdown, and micro-stats strip (`🟢 P · 🔴 A · 🟡 L · 🔵 LV · 👥 Tot`), freeing up 70% vertical screen space.
-- **100% Offline Compatible:** Powered by bundled `jsQR` and hardware-accelerated `BarcodeDetector`.
-- **Full Desktop QR Interoperability:** Automatically scans Desktop PVC ID cards (`CLASSCORE:id:roll:name:cls`), JSON cards, and Roll numbers with instant Cloud Sync to PC.
+### 🖨️ Interactive WYSIWYG Print Preview Engine
+- **Universal Print Preview Canvas:** High-definition Print Preview studio for Attendance, Fee Receipts, Question Papers, Solutions, Passbooks, Timetables, P&L Statements, and Student Registers.
+- **Paper Engine:** Accurate dimensional scaling for `A4`, `A5`, `A6 (105×148mm)`, `A7 (74×105mm)`, `Thermal 80mm/58mm`, and `Fee Card Passbooks (100×185mm)`.
+- **Windows 11 Print Dialog Optimization:** Configured for zero blank preview dialog errors with direct native printer selection (Brother, HP, Canon, Epson).
+
+### 🪪 Physical Fee Passbook Overprinting Engine
+- **Direct Card Feed:** Prints directly onto physical student tuition cards and passbooks (`100mm × 185mm`, `95mm × 180mm`, or custom dimensions) via rear tray printers (Epson EcoTank, Canon PIXMA).
+- **A4 Carrier Sheet Mode:** Laser printer support (HP LaserJet, Brother) using standard A4 carrier sheets.
+- **Micro-Calibration Studio:** Drag-and-drop handles and millimeter adjustment sliders for millimeter-accurate print alignment.
+
+### ⚡ Universal Multi-Size Receipts & Dynamic Offline UPI QR
+- Dynamic NPCI UPI QR code generation on fee receipts for instant scan-and-pay via Google Pay, PhonePe, Paytm, and BHIM.
+- Multi-format printing: A4, A5, A6, A7, and 58mm / 80mm thermal ESC/POS rolls.
+
+### 📝 Automated Question Paper Generator (AQPG)
+- Board/school pattern exam question paper synthesis with sections, marks weightage, chapter blueprints, and automated answer keys.
+- Preloaded with GSEB & NCERT curriculum chapter catalogs.
+
+### ⏱️ Biometric Attendance & Realtime Defaulters
+- USB and network integration with eSSL, Realtime, ZKTeco, and Mantra biometric machines.
+- Pen drive log importer for centers without local networks.
+- One-click daily attendance registers and absentee WhatsApp alerts to parents.
+
+### 📱 Mobile Companion (Android App)
+- **Continuous Camera Viewfinder:** High-speed in-app QR code attendance scanning using phone camera with targeting reticle, audio chime tones, and haptic vibration.
+- **100% Offline Compatible:** Powered by bundled `jsQR` and hardware-accelerated scanning.
+- **Full Desktop Interoperability:** Automatically scans Desktop PVC ID cards and Roll numbers with instant Cloud Sync to PC.
 
 ---
 
